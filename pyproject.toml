@@ -1,0 +1,66 @@
+[project]
+name = "reddit-scraper"
+version = "0.1.0"
+description = "A comprehensive Reddit scraper with multiple methods for public data extraction"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "aiohttp>=3.9.0",
+    "requests>=2.31.0",
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.0",
+    "pandas>=2.0.0",
+    "pysocks>=1.7.1",
+    "fake-useragent>=1.4.0",
+    "aiofiles>=23.2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.11.0", 
+    "pytest-cov>=4.1.0",
+    "responses>=0.23.0",
+    "aioresponses>=0.7.4",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0"
+]
+
+[project.scripts]
+reddit-scraper = "reddit_scraper.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--disable-warnings", 
+    "--cov=reddit_scraper",
+    "--cov-report=term-missing",
+    "--cov-report=html"
+]
+asyncio_mode = "auto"
+markers = [
+    "unit: Unit tests", 
+    "integration: Integration tests",
+    "slow: Slow tests that hit external APIs"
+]

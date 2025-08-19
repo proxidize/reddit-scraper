@@ -1,0 +1,35 @@
+{
+  "proxies": [
+    {
+      "host": "proxy1.example.com",
+      "port": 8080,
+      "username": "your_proxy_username",
+      "password": "your_proxy_password",
+      "proxy_type": "http"
+    },
+    {
+      "host": "proxy2.example.com",
+      "port": 1080,
+      "username": "your_proxy_username",
+      "password": "your_proxy_password",
+      "proxy_type": "socks5"
+    }
+  ],
+  "captcha_solvers": [
+    {
+      "api_key": "CAP-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "provider": "capsolver",
+      "site_keys": {
+        "reddit.com": "6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-",
+        "www.reddit.com": "6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-"
+      }
+    }
+  ],
+  "scraping": {
+    "default_delay": 1.0,
+    "max_retries": 3,
+    "requests_per_minute": 60,
+    "user_agent": "RedditScraper/1.0.0",
+    "rotate_user_agents": true
+  }
+}
