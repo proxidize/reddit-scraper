@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://proxidize.com/wp-content/uploads/2025/08/new-logo.png" alt="Proxidize Logo" width="100%"/>
+  <a href="https://proxidize.com/" target="_blank" rel="noopener noreferrer">
+    <img src="https://proxidize.com/wp-content/uploads/2025/08/new-logo.png" alt="Proxidize Logo" width="100%"/>
+  </a>
 </div>
 
 # Reddit Scraper

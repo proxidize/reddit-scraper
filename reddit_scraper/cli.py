@@ -50,7 +50,7 @@ def setup_advanced_features(config_manager: ConfigManager) -> tuple:
             if captcha_configs:
                 config = captcha_configs[0]
                 captcha_solver = CaptchaSolverManager(
-                    api_key=config.api_key,
+                    config.api_key,
                     site_keys=config.site_keys or {}
                 )
                 balance = captcha_solver.solver.get_balance()
