@@ -438,6 +438,19 @@ Compatible with Reddit's public JSON endpoints for FREE data access.
 
 This project is for educational and research purposes. Please respect Reddit's Terms of Service and robots.txt.
 
+## Blog Post
+
+For a detailed walkthrough of how this Reddit scraper was built, including the challenges faced and solutions implemented, read our comprehensive blog post:
+
+**[Reddit Scraper: How to Scrape Reddit for Free](https://proxidize.com/blog/reddit-scraper/)**
+
+The blog post covers:
+- Why Python was chosen for this project
+- How pagination problems were solved
+- Different approaches for small vs large scraping jobs
+- Proxy rotation and error handling strategies
+- Real-world examples and use cases
+
 ## Support
 
 For issues, questions, or feature requests, please open an issue on GitHub.
