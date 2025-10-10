@@ -453,7 +453,7 @@ The blog post covers:
 
 ## Support
 
-For issues, questions, or feature requests, please open an issue on GitHub.
+For issues, questions, or feature requests, please open an issue on GitHub or contact [support@proxidize.com](mailto:support@proxidize.com).
 
 ---
 
