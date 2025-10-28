@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://proxidize.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://proxidize.com/wp-content/uploads/2025/10/github-redditscraper.png" alt="Proxidize Logo" width="100%"/>
+    <img src="https://proxidize.com/wp-content/uploads/2025/10/reddit.png" alt="Proxidize Logo" width="100%"/>
   </a>
 </div>
 
